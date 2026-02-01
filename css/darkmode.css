@@ -1,0 +1,129 @@
+/* dark mode */
+:root:has(#toggle-btn:checked){
+  --nav-color: #171717;
+  --page-color: #252525;
+  --card-color: #1e1e1e;
+  --text-heading: #ffffff;
+  --text-paragraph: #9f9f9f;
+  --color-main: #C17E1F;
+  --icon-overlay: #ffffff1a;
+  --border-color:white;
+  
+}
+/********** nav in dark mood  ****************/
+#toggle-btn:checked ~ nav {
+  background-color: var(--nav-color);
+}
+
+#toggle-btn:checked ~ nav .logo h2 {
+  color: var(--text-heading);
+}
+#toggle-btn:checked ~ .nav-links li a {
+  color: var(--text-paragraph);
+}
+
+#toggle-btn:checked ~ .nav-links li:hover a {
+  color: var(--text-heading);
+}
+
+#toggle-btn:checked ~ label .moon {
+  display: none;
+}
+
+#toggle-btn:checked ~ label .sun {
+  display: block;
+   color: var(--text-heading);
+}
+ 
+#toggle-btn:checked ~ .contact-record .icon i{
+  color: var(--text-heading);
+}
+/***************  Home Section Dark Mode*****************/
+body:has(#toggle-btn:checked) .home {
+  background-color: var(--page-color);
+}
+
+body:has(#toggle-btn:checked) .home h1 {
+  color: var(--text-heading);
+}
+
+body:has(#toggle-btn:checked) .home p {
+  color: var(--text-paragraph);
+}
+
+body:has(#toggle-btn:checked) .video-btn {
+  color: var(--text-heading);
+}
+
+body:has(#toggle-btn:checked) .video-btn:hover {
+  color: var(--color-main);
+}
+
+body:has(#toggle-btn:checked) .play-icon::after {
+  background-color: var(--nav-color);
+}
+
+/******************  Chefs Section Dark Mode*********************/
+body:has(#toggle-btn:checked) .chefs {
+  background-color: var(--page-color);
+}
+
+body:has(#toggle-btn:checked) .chef-card {
+  background-color: var(--card-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body:has(#toggle-btn:checked) .chef-content,
+body:has(#toggle-btn:checked) .chef-content h5,
+body:has(#toggle-btn:checked) .chef-content p {
+  color: var(--text-heading);
+}
+
+body:has(#toggle-btn:checked) .chef-card .brands {
+  background-color: var(--icon-overlay);
+}
+/********************** Gallery Section Dark Mode *****************/
+body:has(#dark-mode:checked) .gallery  {
+  background-color:var(--page-color);
+}
+ body:has( #dark-mode:checked ) .gallery .meal-layer h2 {
+  color: var(--text-heading);
+ }
+
+/********************** Contact Section Dark Mode *****************/
+body:has(#toggle-btn:checked) .contact-record {
+  background-color: var(--card-color);
+}
+
+body:has(#toggle-btn:checked) .contact-record h3 {
+  color:var(--text-paragraph);
+}
+
+body:has(#toggle-btn:checked) .contact-record p {
+  color:var(--text-heading);
+}
+
+body:has(#toggle-btn:checked) .contact-record .icon{
+  color:var(--text-heading);
+}
+
+
+body:has(#toggle-btn:checked) .contact-inputs {
+  background-color: var(--page-color);
+}
+
+body:has(#toggle-btn:checked) input,
+body:has(#toggle-btn:checked) textarea {
+  background-color:var(--text-heading);
+  color: var(--text-paragraph);
+  border: 1px solid #333;
+}
+
+body:has(#toggle-btn:checked) input:focus,
+body:has(#toggle-btn:checked) textarea:focus {
+  border: 2px solid var(--color-main);
+}
+/********************** footer Dark Mode *****************/
+body:has(#toggle-btn:checked) .footer .in-touch  i {
+  color: var(--color-main);
+}
