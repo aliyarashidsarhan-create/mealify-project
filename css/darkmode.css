@@ -83,13 +83,13 @@ body:has(#toggle-btn:checked) .chef-card .brands {
   background-color: var(--icon-overlay);
 }
 /********************** Gallery Section Dark Mode *****************/
-body:has(#dark-mode:checked) .gallery  {
+body:has(#toggle-btn:checked) .gallery  {
   background-color:var(--page-color);
 }
- body:has( #dark-mode:checked ) .gallery .meal-layer h2 {
-  color: var(--text-heading);
- }
-
+body:has(#toggle-btn:checked) .gallery .meal-layer h2,
+body:has(#toggle-btn:checked) .gallery .meal-layer p{
+  color: var(--text-heading) ;
+}
 /********************** Contact Section Dark Mode *****************/
 body:has(#toggle-btn:checked) .contact-record {
   background-color: var(--card-color);
@@ -126,4 +126,5 @@ body:has(#toggle-btn:checked) textarea:focus {
 /********************** footer Dark Mode *****************/
 body:has(#toggle-btn:checked) .footer .in-touch  i {
   color: var(--color-main);
+
 }
